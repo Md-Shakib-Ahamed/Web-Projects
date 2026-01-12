@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --lighting-color: #0089b7;
+  --dark-color: #003d62;
+  --darker-color: #003251;
+  --secondary-color: #fff700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  
+  font-size: 62.5%;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+ 
+}
+body {
+  font-size: 1.4rem;
+  background-color: black;
+}
+
+.container {
+  color: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--lighting-color);
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+nav li {
+  font-size: 1.8rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.4rem var(--secondary-color) solid;
+  transition: 0.3s ease-in-out;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.m21 title {
+  font-size: 4rem;
+  color: brown;
+  font-weight: bold;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid brown; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+.m21 h2 {
+  font-size: 4rem;
+  color: orange;
+  font-weight: bold;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 10px;
+}
+
+nav a {
+	color:#fff;
+	text-decoration: none;
+}
+.m21{
+
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+  color: black;
+  display: grid;
+  place-items: center;
+}
+
+.m22 img{
+  height: 110px;
+	width: 110px;
+margin:10px ;
+}
+.m23{
+  margin-left: -35px;
+  color:black;
+  position: sticky;
+	justify-content:space-around;
+	display: flex;
+} 	
+.m23 h6{
+  margin-left: -60px;
+}
+.m23 h5{
+  margin-left: -100px;
+}
+
+@keyframes run {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+.gift-content{
+  color: #003d62;
+}
+.logo-line {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+.logo-line img{
+  height: 30px;
+  width: 40px;
+  margin: 5px;
+}
+.logo-line span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(21, 20, 20);
+  animation: run 10s linear infinite;
+}
+
+
+
+
+#project {
+  background: var(--darker-color);
+}
+#project2 {
+  background: var(--darker-color);
+}
+
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.project2_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+  gap: 1rem;
+}
+.grid_item {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+.card1 {
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+.card img{
+  height: 220px;
+  width: 220px;
+}
+.card1 img{
+  height: 180px;
+	width: 150px;
+
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.card1:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
+  opacity: 0.8;
+}
+.card1:hover img {
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
+  opacity: 0.4;
+}
+.card:hover .card_content {
+  background: white;
+  color: var(--dark-color);
+  transform: translateY(-20px);
+}
+.card1:hover .card1_content {
+  background: white;
+  color: var(--dark-color);
+  transform: translateY(-10px);
+}
+.card_content {
+  padding: 2rem;
+  position: relative;
+  top: -10.5rem;
+  margin-bottom: -10.5rem;
+  transition: 0.7s ease-in-out;
+  transform: translateY(100px);
+}
+.card1_content {
+  padding: 1rem;
+  position: relative;
+  top: -10.5rem;
+  margin-bottom: -10.5rem;
+  transition: 0.7s ease-in-out;
+  transform: translateY(50px);
+}
+.card_content h3 {
+  text-align: center;
+}
+.card_content h4 {
+  text-align: center;
+}
+.card1_content h6 {
+  text-align: center;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+gift-content {
+  display: flex;
+  background-color: #444;
+  margin: 100px 0;
+  margin-right: 10px;
+  gap: 50px;
+ justify-content: center;
+}
+.header1 {
+  
+  top: 0;
+  z-index: 100;
+  background: black;
+}
+.gift-section {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  gap: 50px;
+ 
+}
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+button:hover {
+	background-color: #444;
+}
+#music{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.content{
+  background-image:url(./photos/images/Bacdround.jpg);
+  min-height: 400px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content_text{
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-left: 60px;
+
+}
+.content_text h3{
+  color: red;
+}
+
+
+
+.footer-upper{
+  background: var(--darker-color);
+  padding: 20px;
+}
+.footer-upper .container {
+  
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer-upper h4 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.sam6  {
+  background-color:black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.container {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section {
+  scroll-margin: 50px;
+}
+ul {
+  list-style: none;
+}
+.contact-section{
+  background: var(--darker-color);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color:white; 
+}
+
+/* Media Query */
+
+@media (max-width: 786px) {
+  html {
+    font-size: 40%;
+  }
+  #m21 .m22 .m23 .m24  .card .gift-section {
+    flex-direction: column;
+    display: grid;
+    place-items: center;
+  }
+  #contact .project_container {
+    height: 70vh;
+  }
+  #contact .container {
+    height: 70vh;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 32%;
+  }
+  
+  .m21 .m22 .m23 .m24 .card .gift-section{
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+  }
+  #contact .container {
+    height: 50vh;
+  }
+  #contact .container {
+    height: 50vh;
+  }
+}
+
+ /* CSS style for the play button */
+.play-button {
+  position: absolute;
+  left:80px;
+ top: 60px;
+ transform: translate(-50px,-50px);
+  font-size: 24px;
+  color: rgb(16, 206, 231);
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: .8;
+  transition: opacity 0.3s;
+}
